@@ -37,6 +37,7 @@ To retrieve only a specific image or attachment with a certain name you would us
 ```html+jinja
 {% set my_image site.get('/myfolder').attachments.get('imagenameexample.jpg') %}
   <div class="image"><img src="{{ my_image|url }}"></div>
+{% endset %}
 ```
 
 
