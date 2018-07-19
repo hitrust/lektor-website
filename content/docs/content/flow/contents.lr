@@ -66,6 +66,7 @@ of an attached image:
     <img src="{{ img.thumbnail(480)|url }}" alt="">
   </div>
 {% endif %}
+{% endset %}
 ```
 
 This also has a safeguard that if the image does not exist nothing is rendered
