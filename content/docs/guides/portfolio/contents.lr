@@ -105,6 +105,7 @@ a thumbnail.
       {% if image %}
         <img src="{{ image.thumbnail(320)|url }}" alt="">
       {% endif %}
+      {% endset %}
       <h2><a href="{{ project|url }}">{{ project.name }}</a>
         <em>({{ project.date.year }})</em></h2>
       <p><strong>{{ project.type }}</strong></p>
@@ -151,6 +152,7 @@ For the detail page we show all information we know about:
       </div>
     {% endfor %}
   {% endif %}
+  {% endset %}
 {% endblock %}
 ```
 
